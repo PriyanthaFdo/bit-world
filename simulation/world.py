@@ -1,17 +1,15 @@
-# world.py
-
 import numpy as np
 from simulation.bit import Bit
-from simulation.config import WORLD_SIZE
+from simulation.config import *
 
 class World:
     """Represents the world grid."""
     def __init__(self):
         self.bits = []
         # Initialize some bits in random positions
-        for _ in range(100):  # Starting with 100 bits for example
-            x = np.random.randint(0, WORLD_SIZE)
-            y = np.random.randint(0, WORLD_SIZE)
+        for _ in range(INITIAL_BIT_COUNT): 
+            x = np.random.randint(0, WORLD_WIDTH)
+            y = np.random.randint(0, WORLD_HEIGHT)
             self.bits.append(Bit((x, y)))
     
     def get_bits(self):

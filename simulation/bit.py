@@ -1,5 +1,3 @@
-# bit.py
-
 class Bit:
     """Represents a single unit in the world."""
     def __init__(self, position):

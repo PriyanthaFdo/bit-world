@@ -1,20 +1,18 @@
-# config.py
+# Number of bits to create initialy
+INITIAL_BIT_COUNT = 100
+
+# Bit pixel size
+BIT_SIZE = 2
 
 # World Dimensions
-WORLD_SIZE = 10000
-
-# Screen Dimensions
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
+WORLD_HEIGHT = 600
+WORLD_WIDTH = 600
 
 # Minimap Dimensions
-MINIMAP_WIDTH = 200
-MINIMAP_HEIGHT = 200
+MINIMAP_WIDTH = 100
+MINIMAP_HEIGHT = 100
 MINIMAP_MARGIN = 10
 
-# Zoom Levels
-MAX_ZOOM = 9
-MIN_ZOOM = 1
 
 # Colors
 WHITE = (255, 255, 255)
